@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+<h1>FORM</h1>
+<table>
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+</tr>
+
+</thead>
+
+<tbody>
+<a href="/add">ADD DATA</a> <br>
+<a href="/edit/{id}">EDIT DATA</a>
+
+<!-- <tr th:each "{ref : {$dara} }" >
+<td th:{ref.id}>ID</td>
+<td th:{ref.name}>Name</td>
+
+</tr>
+ -->
+</tbody>
+</table>
+
+</body>
+</html>

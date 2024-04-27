@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="#" th:"@{/save}" th:object="${student}" method="post">
+<input type="text" th:field=*{id} readonly="readonly">
+<input type="text" th:field=*{name}>
+<button type="submit">Add Data</button>
+</form>
+
+</body>
+</html>
