@@ -48,16 +48,16 @@ public class MyController {
 	}
 
 	@RequestMapping("/edit/{id}")
-	public ModelAndView showEditProductPage(@PathVariable(name = "id") int id)
+	public ModelAndView editStudent(@PathVariable(name = "id") int id)
 	{
-		ModelAndView view=new ModelAndView("edit_Product");
+		ModelAndView view=new ModelAndView("edit_Student");
 		Student student=service.get(id);
 		view.addObject("edit");
 		return view;
 	}
 	
 	@RequestMapping("/delete/{id}")
-	public String deleteProductPage(@PathVariable(name = "id") int id)
+	public String deleteStudent(@PathVariable(name = "id") int id)
 	{
 		service.delete(id);
 		
